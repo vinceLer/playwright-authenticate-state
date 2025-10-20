@@ -89,6 +89,12 @@ projects: [
   ],
 ```
 
+Add this line below directly in in `playwright.config.ts` for the target project to run `setup` file(s) before each project execution : 
+
+```bash
+
+```
+
 ### Use authenticate state session in test  
 
 Import session state to the test file : 
