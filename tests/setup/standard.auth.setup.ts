@@ -16,5 +16,7 @@ setup('[setup] Standard user session', async ({ page }) => {
     await page.locator('[data-test="login-button"]').click();
 
     await page.locator('[data-test="title"]').waitFor();
+
+    // Save context
     await page.context().storageState({ path: USER_FILE });
 });
